@@ -61,7 +61,7 @@ router.post("/mentor/register", (req, res) => {
             whatsapp: req.body.whatsapp,
         }, req.body.password, (err, newMentor) => {
             if (err) {
-                console.log(err)
+                console.log(err);
                 res.json({
                     type: 'failure',
                     err: 'errorRegistering'
